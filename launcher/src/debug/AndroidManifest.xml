@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2018  Clemens Bartz
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="de.clemensbartz.android.launcher">
+
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.software.home_screen" android:required="true" />
+    <uses-feature android:name="android.software.app_widgets" android:required="false" />
+    <uses-feature android:name="android.hardware.ram.low" android:required="false" />
+    <uses-feature android:name="android.hardware.ram.normal" android:required="false" />
+
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"
+        tools:ignore="ProtectedPermissions" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application android:label="@string/appName"
+                 android:icon="@drawable/ic_launcher"
+                 android:allowBackup="false"
+                 android:supportsRtl="true"
+                 tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="de.clemensbartz.android.launcher.Launcher"
+                  android:label="@string/appName"
+                  android:launchMode="singleTask"
+                  android:clearTaskOnLaunch="true"
+                  android:stateNotNeeded="true"
+                  android:theme="@style/API28ActivityStyle"
+                  android:visibleToInstantApps="false"
+                  android:resizeableActivity="false"
+                  tools:targetApi="o">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
