@@ -116,14 +116,14 @@ public final class Launcher extends Activity {
         }
 
         // Load the default drawable
-        final Drawable icLauncher;
+        final Drawable dockDefault;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            icLauncher = getDrawable(R.drawable.ic_launcher);
+            dockDefault = getDrawable(R.drawable.ic_round);
         } else {
-            icLauncher = getResources().getDrawable(R.drawable.ic_launcher);
+            dockDefault = getResources().getDrawable(R.drawable.ic_round);
         }
 
-        if (icLauncher == null) {
+        if (dockDefault == null) {
             throw new NullPointerException("Could not load ic_launcher drawable.");
         }
 
@@ -136,10 +136,10 @@ public final class Launcher extends Activity {
         dockImageViews.add((ImageView) findViewById(R.id.ivDock5));
         dockImageViews.add((ImageView) findViewById(R.id.ivDock6));
         dockImageViews.add((ImageView) findViewById(R.id.ivDock7));
-        dockController = new DockController(this, getPackageManager(), sharedPreferencesDAO, icLauncher, dockImageViews);
+        dockController = new DockController(this, getPackageManager(), sharedPreferencesDAO, dockDefault, dockImageViews);
 
         // Create and assign adapter to views
-        drawerListAdapter = new DrawerListAdapter(this, icLauncher);
+        drawerListAdapter = new DrawerListAdapter(this, dockDefault);
         // Create and assign the drawer controller
         drawerController = new DrawerController(drawerListAdapter, sharedPreferencesDAO);
 
@@ -150,7 +150,7 @@ public final class Launcher extends Activity {
         );
         // Assign adapter
         for (final AbsListView listView : listViews) {
-            final int topPx = ThemeUtil.getActionBarHeight(this);
+            final int topPx = 0;
 
             final ViewGroup.LayoutParams layoutParams = listView.getLayoutParams();
             if (layoutParams instanceof ViewGroup.MarginLayoutParams) {

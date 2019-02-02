@@ -17,7 +17,9 @@
   -->
 
 <resources>
-    <style name="API17ActivityStyle" parent="android:Theme.Holo.Wallpaper">
-        <item name="android:windowActionBarOverlay">true</item>
+    <style name="API17ActivityStyle" parent="android:Theme.Holo.Wallpaper.NoTitleBar">
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
     </style>
 </resources>
