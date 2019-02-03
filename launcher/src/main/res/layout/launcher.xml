@@ -149,7 +149,7 @@
                 android:paddingEnd="5dp"
                 android:paddingStart="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher"
+                android:src="@drawable/ic_round"
                 android:visibility="gone" />
 
             <ImageView
@@ -165,7 +165,7 @@
                 android:paddingEnd="5dp"
                 android:paddingStart="5dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_launcher"
+                android:src="@drawable/ic_round"
                 android:visibility="gone" />
         </LinearLayout>
     </LinearLayout>
