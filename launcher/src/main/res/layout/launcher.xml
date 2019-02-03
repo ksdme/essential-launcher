@@ -208,7 +208,8 @@
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
-            android:scrollbarStyle="insideOverlay" />
+            android:scrollbarStyle="insideOverlay"
+            android:divider="@android:color/transparent" />
     </LinearLayout>
 
 </ViewFlipper>
