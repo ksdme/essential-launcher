@@ -191,7 +191,8 @@
             android:scrollbarStyle="insideOverlay"
             android:smoothScrollbar="false"
             android:stretchMode="columnWidth"
-            android:verticalSpacing="5dp" />
+            android:verticalSpacing="5dp"
+            android:listSelector="@android:color/transparent" />
     </LinearLayout>
 
     <LinearLayout
