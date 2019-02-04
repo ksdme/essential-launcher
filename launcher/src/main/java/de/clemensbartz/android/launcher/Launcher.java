@@ -17,7 +17,6 @@
 
 package de.clemensbartz.android.launcher;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -27,6 +26,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -66,7 +66,7 @@ import de.clemensbartz.android.launcher.util.ThemeUtil;
  * @author Clemens Bartz
  * @since 1.0
  */
-public final class Launcher extends Activity {
+public final class Launcher extends AppCompatActivity {
 
     /** The shared preferences dao. */
     @Nullable

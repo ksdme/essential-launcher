@@ -17,11 +17,9 @@
   -->
 
 <resources>
-    <style name="API21ActivityStyle" parent="@android:style/Theme.DeviceDefault.Wallpaper">
+    <style name="API21ActivityStyle" parent="Theme.AppCompat.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:windowActionBarOverlay">false</item>
-        <item name="android:windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
     </style>
 </resources>
