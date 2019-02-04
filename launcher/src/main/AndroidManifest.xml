@@ -39,7 +39,7 @@
                   android:launchMode="singleTask"
                   android:clearTaskOnLaunch="true"
                   android:stateNotNeeded="true"
-                  android:theme="@style/API28ActivityStyle"
+                  android:theme="@style/LauncherActivityStyle"
                   android:visibleToInstantApps="false"
                   android:resizeableActivity="false"
                   tools:targetApi="o">

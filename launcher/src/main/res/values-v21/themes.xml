@@ -17,9 +17,7 @@
   -->
 
 <resources>
-    <style name="API21ActivityStyle" parent="Theme.AppCompat.NoActionBar">
+    <style name="LauncherActivityStyle" parent="AppBase.LauncherActivityStyle">
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowShowWallpaper">true</item>
     </style>
 </resources>

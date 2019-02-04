@@ -17,10 +17,8 @@
   -->
 
 <resources>
-    <style name="API28ActivityStyle" parent="Theme.AppCompat.NoActionBar">
+    <style name="LauncherActivityStyle" parent="AppBase.LauncherActivityStyle">
         <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowShowWallpaper">true</item>
     </style>
 </resources>

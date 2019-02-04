@@ -58,7 +58,6 @@ import de.clemensbartz.android.launcher.tasks.LoadDrawerListAdapterTask;
 import de.clemensbartz.android.launcher.tasks.LoadSharedPreferencesDAOTask;
 import de.clemensbartz.android.launcher.util.IntentUtil;
 import de.clemensbartz.android.launcher.util.StrictModeUtil;
-import de.clemensbartz.android.launcher.util.ThemeUtil;
 
 /**
  * Launcher class.
@@ -93,8 +92,6 @@ public final class Launcher extends AppCompatActivity {
 
     @Override
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
-        // Set theme
-        ThemeUtil.setTheme(this);
         // Create activity
         super.onCreate(savedInstanceState);
         // Set layout
